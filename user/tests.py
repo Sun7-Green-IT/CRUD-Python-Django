@@ -19,14 +19,14 @@ class BaseViewTest(APITestCase):
 
     def setUp(self):
         # add test data
-        self.create_user('Arri', 'Gelletly', 'agelletly0@skyrock.com',
-                         date.today(), '0cac83fb-ea03-42ec-92f7-fd372dd76ced')
-        self.create_user('Arri', 'Gelletly', 'agelletly0@skyrock.com',
-                         date.today(), '0cac83fb-ea03-42ec-92f7-fd372dd76eed')
-        self.create_user('Arri', 'Gelletly', 'agelletly0@skyrock.com',
-                         date.today(), '0cac83fb-ea03-42ec-92f7-fd372dd76ded')
-        self.create_user('Arri', 'Gelletly', 'agelletly0@skyrock.com',
-                         date.today(), '0cac83fb-ea03-42ec-92f7-fd372dd76ged')
+        self.create_user('Arri', 'Gelletly',
+                         date.today(),  'agelletly0@skyrock.com', '0cac83fb-ea03-42ec-92f7-fd372dd76ced')
+        self.create_user('Arri', 'Gelletly',
+                         date.today(),  'agelletly0@skyrock.com', '0cac83fb-ea03-42ec-92f7-fd372dd76eed')
+        self.create_user('Arri', 'Gelletly',
+                         date.today(),  'agelletly0@skyrock.com', '0cac83fb-ea03-42ec-92f7-fd372dd76ded')
+        self.create_user('Arri', 'Gelletly',
+                         date.today(),  'agelletly0@skyrock.com', '0cac83fb-ea03-42ec-92f7-fd372dd76ged')
 
 
 class GetAllUserTest(BaseViewTest):
